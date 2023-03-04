@@ -1,0 +1,148 @@
+@import url(000.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #CDDDE2;
+	max-width: 100%;
+	max-height: 100%;
+	
+}
+.title{
+	font-size: 72PX;
+	text-align: center;
+	word-spacing: 30px;
+	letter-spacing: 20px;
+	min-width: 820px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	height: 141;
+	margin: 80px 551px 157px;
+}
+.box{
+	display: flex;
+	justify-content: center;
+}
+.block{
+	text-transform: capitalize;
+	height: 321px;
+	background-color: #FBFBFB;
+	border-radius: 10px;
+	flex: 0 0 1637px;
+}
+
+.block_blockinside{
+	margin: 31px 24px;
+	width: 1590px;
+	height: 143px;
+	background-color: #E1E1E1;
+	border-radius: 28px;
+	font-size: 32px;
+	line-height: 50px;
+	padding: 20px;
+}
+
+.block_blockinside__title{
+	font-weight: bold;	
+}
+.plus{
+	border-radius: 50%;
+	width: 123px;
+	height: 123px;
+	background-color: #257189;
+	position: fixed;
+	bottom: 48px;
+	right: 53px;
+
+}
+.plus_v{
+	width: 12px;
+	height: 82px;
+	background-color: #FBFBFB;
+	position: absolute;
+	left: 56px;
+	top: 21px;
+}
+.plus_g{
+	width: 82px;
+	height: 12px;
+	background-color: #FBFBFB;
+	position: absolute;
+	left: 21px;
+	top: 56px;
+}
+.plus:hover{
+	background-color: #3291AF;
+}
+.plus:active{
+	background-color: #4EC3E9;
+}
+.popup{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	min-height: 100%;
+	min-width: 100%;
+	background-color:rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup__body{
+	position: fixed;
+	top: 279px;
+	left: 600px;
+	width: 827px;
+	height: 523px;
+	background-color: #ffffff;
+	border-radius: 76px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+	font-size: 24px;
+}
+.popup__text{
+	
+	position: absolute;
+	top: 105px;
+	left: 130px;
+}
+input{
+	background-color: #efefef;
+	width: 575px;
+	height: 64px;
+	margin: 0px 0px 20px 0px;
+}
+textarea{
+	background-color: #efefef;
+	width: 575px;
+	height: 121px;
+}
+input, textarea{
+	font-size: 18px;
+	padding: 10px;
+}
+button{
+	position: absolute;
+	top: 300px;
+	left: 115px;
+	width: 352px;
+	height: 69px;
+	border-radius: 10px;
+	font-size: 24px;
+	color: #ffffff;
+	background-color: #6CB1D8;
+}
+button:hover{
+	background-color: #B3DDF4;
+}
+textarea:focus{
+	border: 2px solid #4EC3E9;
+}
+input:focus{
+	border: 2px solid #4EC3E9;
+}
+.plus:active ~ .popup{
+	visibility: inherit;
+}

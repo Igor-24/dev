@@ -6,29 +6,31 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 </head>
 <body>
-   <h2>Anna’s <span>TODO</span><br> List</h2>
-   <div class="title">
-    <div class="titlea">
-        <div class="title_text">
-            Title
+   <div class="title">Anna’s TODO<br> List</div>
+   <div class="box">
+    <div class="block">
+        <div class="block_blockinside">
+            <div class="block_blockinside__title">
+                Title
+            </div>
+            <div class="block_blockinside__subtitle">
+                Subtitle
+            </div>
         </div>
-        <div class="title_texta">
-            Subtitle
-        </div>
-    </div>
+       </div>
    </div>
    <div class="plus">
     <div class="plus_v"></div>
     <div class="plus_g"></div>
    </div>
    <div class="popup">
-    <div class="popup_window">
-        <div class="popup_window_zadacha"> 
+    <div class="popup__body">
+        <div class="popup__text"> 
             <form action="#" method="post" enctype="multipart/form-data">
                 <p>задача</p>
-                <input type="text" name="zadacha" placeholder="введите имя задачи">
+                <input type="text" name="name" placeholder="введите имя задачи">
                 <p>заметка</p>
-                <textarea name="zametka" id="#" cols="30" rows="10" placeholder="введите текст зметки"></textarea>
+                <textarea name="text" id="#" cols="30" rows="10" placeholder="введите текст зметки"></textarea>
                 <button type="reset">сохранить</button>
             </form>
         </div>     
